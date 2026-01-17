@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Product Dashboard</title>
+<link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="row">
+ <h1>Smart Product Dashboard</h1>
+      <form role="search">
+        <label for="searchInput" class="sr-only">Search products</label>
+        <input type="search" id="searchInput" placeholder="Search products..." aria-label="Search products"/>
+   </form> </div>
+    
+  </header>
+
+  <main class="products">
+    <aside class="filters">
+   <h2>Filters</h2>
+      <label>
+        <input type="checkbox" id="favoritesFilter" />
+        Favorites only
+    </label>
+    </aside>
+
+    <section class="products-section">
+      <p id="loadingText" hidden>Loading products...</p>
+      <div class="products-grid" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>
